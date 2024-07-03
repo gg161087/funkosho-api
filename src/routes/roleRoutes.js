@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { getAllRoles, getRoleById, createRole, updateRoleById, deleteRoleById } from './../controllers/roleController.js';
+import { getAllRoles, getRoleById, createRole, updateRoleById, deleteRoleById } from '../controllers/roleController.js';
 
 export const roleRouter = Router();
 

@@ -1,4 +1,4 @@
-import { Category } from './../database/initSequelize.js';
+import { Category } from '../database/initSequelize.js';
 
 export const getAllCategories = async (req, res) => {
     try {

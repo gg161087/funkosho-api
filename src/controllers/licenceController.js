@@ -1,4 +1,4 @@
-import { Licence } from './../database/initSequelize.js';
+import { Licence } from '../database/initSequelize.js';
 
 export const getAllLicences = async (req, res) => {
     try {

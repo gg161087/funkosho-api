@@ -1,4 +1,4 @@
-import { Role } from './../database/initSequelize.js';
+import { Role } from '../database/initSequelize.js';
 
 export const getAllRoles = async (req, res) => {
     try {

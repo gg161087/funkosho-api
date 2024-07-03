@@ -1,5 +1,5 @@
-import { User, UserRoles, Role } from './../database/initSequelize.js';
-import { hashPassword }from './../utils/handlePassword.js';
+import { User, UserRoles, Role } from '../database/initSequelize.js';
+import { hashPassword }from '../utils/handlePassword.js';
 
 export const getAllUsers = async (req, res) => {
     try {

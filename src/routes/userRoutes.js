@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import { getAllUsers, getUserById, createNewUser, deleteUserById, updateUserById } from './../controllers/userController.js';
-import { login } from './../controllers/loginController.js';
-import { validatorCreateUser } from './../utils/usersValidator.js';
+import { getAllUsers, getUserById, createNewUser, deleteUserById, updateUserById } from '../controllers/userController.js';
+import { login } from '../controllers/loginController.js';
+import { validatorCreateUser } from '../utils/usersValidator.js';
 
 export const userRouter = Router();
 

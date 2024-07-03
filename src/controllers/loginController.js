@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
-import { checkPassword } from './../utils/handlePassword.js';
-import { User, Role } from './../database/initSequelize.js';
+import { checkPassword } from '../utils/handlePassword.js';
+import { User, Role } from '../database/initSequelize.js';
 
 export const login = async (req, res, next) => {
     const { email, password } = req.body;  

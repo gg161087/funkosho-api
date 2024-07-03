@@ -1,4 +1,4 @@
-import { Licence, Category, Product, ProductSpecifications } from './../database/initSequelize.js';
+import { Licence, Category, Product, ProductSpecifications } from '../database/initSequelize.js';
 
 export const getAllProducts = async (req, res, next) => {
     try {
