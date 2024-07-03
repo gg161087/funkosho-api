@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "nodemon --exec npm run babel-node index.js",
     "babel-node": "babel-node --presets=@babel/preset-env",
     "dev": "nodemon --exec npm run babel-node index.js"
+    
   },
   "repository": {
     "type": "git",
