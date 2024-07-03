@@ -1,6 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default (sequelize) => {
+
     const licenceModel = sequelize.define('licences', {
         id: {
             type: DataTypes.INTEGER(11),
@@ -29,5 +30,7 @@ export default (sequelize) => {
             defaultValue: DataTypes.NOW
         }
     });
+
     return licenceModel;
+    
 }

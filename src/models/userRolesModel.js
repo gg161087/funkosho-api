@@ -25,5 +25,7 @@ export default (sequelize) => {
             defaultValue: DataTypes.NOW
         }
     });
+
     return userRolesModel;
+
 }

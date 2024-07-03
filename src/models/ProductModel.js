@@ -1,7 +1,8 @@
 import { DataTypes } from 'sequelize';
 
 export default (sequelize) => {
-    const productModel = sequelize.define('products', {
+
+    const productModel = sequelize.define('products', {        
         id: {
             type: DataTypes.INTEGER(11),
             primaryKey: true,
@@ -64,5 +65,7 @@ export default (sequelize) => {
             defaultValue: DataTypes.NOW
         }
     });
+
     return productModel;
+
 }

@@ -1,6 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default (sequelize) => {
+
     const userModel = sequelize.define('users', {
         id: {
             type: DataTypes.INTEGER(11),
@@ -37,5 +38,7 @@ export default (sequelize) => {
             defaultValue: DataTypes.NOW
         }
     })
+
     return userModel;
+
 }

@@ -1,6 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default (sequelize) => {
+    
     const roleModel = sequelize.define('roles', {
         id: {
             type: DataTypes.INTEGER(11),
@@ -22,5 +23,7 @@ export default (sequelize) => {
             defaultValue: DataTypes.NOW
         }
     });
+
     return roleModel;
+
 }
