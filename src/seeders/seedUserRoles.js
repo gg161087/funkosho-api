@@ -1,4 +1,4 @@
-import { UserRoles } from './../database/initSequelize.js';
+import { UserRoles } from '../database/initSequelize.js';
 
 export const seedUserRoles = async () => {
     await UserRoles.bulkCreate([

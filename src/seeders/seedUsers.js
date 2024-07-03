@@ -1,4 +1,4 @@
-import { User } from './../database/initSequelize.js';
+import { User } from '../database/initSequelize.js';
 
 export const seedUsers = async () => {
     await User.bulkCreate([

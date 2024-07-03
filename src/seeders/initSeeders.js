@@ -10,15 +10,17 @@ import { seedUserRoles } from './seedUserRoles.js';
 
 export const initSeeders = async () => {
     await sequelize.sync({ force: true });
-    console.log('All models were synchronized successfully.');   
-
-    seedCategories();
-    seedLicences();
-    seedRoles();
-    seedProducts();
-    //seedProductSpecifications();
-    seedUsers();
-    seedUserRoles();
-
-    console.log('Initial data has been added.');
+    console.log('All models were synchronized successfully.');  
+    try {
+        await seedCategories();
+        await seedLicences();
+        await seedRoles();
+        await seedProducts();
+        //await seedProductSpecifications();
+        await seedUsers();
+        await seedUserRoles();
+        console.log('Initial data has been added.');         
+    } catch (error) {
+        console.error('Error seeding:', error)
+    }   
 }
